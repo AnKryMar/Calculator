@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculation-form">
+        <div id="calculator" class="main-flex-container">
+            <section id="display">
+                <input type="text" id="history" value="" disabled>
+                <div class="break"></div>
+                <output name="result" id="result" for="history">0</output>
+            </section>
+
+            <section id="keypad">
+                <button type="button" class="to-line button-color red-color" data-all-clear>C</button>
+                <div class="break"></div>
+
+                <button type="button" class="button-color" data-backspace>&#8676;</button>
+                <button type="button" class="button-color" data-sqrt>&radic;</button>
+                <button type="button" class="button-color" data-percent>%</button>
+                <button type="button" data-operator="^" class="operator button-color">x&#8319;</button>
+                <div class="break"></div>
+
+
+                <button type="button" class="button-color" data-number="7">7</button>
+                <button type="button" class="button-color" data-number="8">8</button>
+                <button type="button" class="button-color" data-number="9">9</button>
+                <button type="button" data-operator="/" class="operator button-color">&divide;</button>
+                <div class="break"></div>
+
+                <button type="button" class="button-color" data-number="4">4</button>
+                <button type="button" class="button-color" data-number="5">5</button>
+                <button type="button" class="button-color" data-number="6">6</button>
+                <button type="button" data-operator="*" class="operator button-color">&times;</button>
+                <div class="break"></div>
+
+                <button type="button" class="button-color" data-number="1">1</button>
+                <button type="button" class="button-color" data-number="2">2</button>
+                <button type="button" class="button-color" data-number="3">3</button>
+                <button type="button" data-operator="-" class="operator button-color">&minus;</button>
+                <div class="break"></div>
+
+                <button type="button" class="button-color" data-negation>&plus;/&minus;</button>
+                <button type="button" class="button-color" data-number="0">0</button>
+                <button type="button" class="button-color" data-decimal=".">&dot;</button>
+                <button type="button" data-operator="+" class="operator button-color">&plus;</button>
+                <div class="break"></div>
+
+                <button type="button/submit" data-equals="=" class="operator button-color to-line">&equals;</button>
+            </section>
+        </div>
+        <div class="local-history">
+            <h2>History</h2>
+            <div class="history-list">
+                <ul id="history-list">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="script.js" defer></script>
+
+</html>
